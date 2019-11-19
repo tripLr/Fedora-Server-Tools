@@ -1,9 +1,12 @@
 # fedora-build 
-# Check branches for your version of Fedora
-# Created Fedora28 for server
-# Created Fedora29 for server
-# Created Fedora28desktop for fedora 28 desktop
-# Fedora server build environment for Google Android,  Oreo , LineageOS
+# Necessary packages to compile android using fedora instead of ubuntu
+# Switch branches for your version of Fedora
+# Fedora28
+# Fedora29
+# Fedora30
+# Fedora31
+# Fedora server build environment for Google AOSP and varients 
+   including LineageOS AEX AICP AOKP 
 # many thanks to xda_developers @_mone, @ripee
 
 Update First Successful Builds to Fedora Server with LineageOS on my server
@@ -23,7 +26,7 @@ I currently Testing Fedora 29 on my Dell r810 server to build
 Sucessfully built one copy of LineageOS 15 for trlteduos 
 I am currently trying to develop the machine into a nightly builder
 
-Install How to:
+How to:
 Install your Fedora Server
 Use sudo dnf grouplist to show all your development groups
 install all the development groups and things you want
