@@ -20,6 +20,8 @@ dnf update
 # fedora packages that replace ubuntu build-essential package                                                                                                      
 dnf groupinstall "Development Tools" "Development Libraries"
 
+dnf install java-1.8.0-openjdk-devel java-1.8.0-openjdk
+
 # fedora gcc-c++ replaces ubuntu  g++-multilib gcc-multilib                                                                                                        
 # dnf install gcc-c++  fedora 31 installs with a previously above package                                                                                                                                      
 # fedora readline.* installs listed below include both 32 bit (i686) and 64bit (x86-64) replaces ubuntu lib32readline-dev                                          
@@ -47,12 +49,16 @@ dnf install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 # dnf install libxslt installed by fedora 31 above 
 # fedora package zlib replaces ubuntu zlib1g-dev                                                                                                                   
 dnf install zlib.*
+# xz compatable libraries
+dnf install lzma
+
+dnf install xz
 # packages below with the same name as ubuntu and fedora                                                                                                           
-# dnf install bc bison ccache curl flex git gnupg gperf lzop pngcrush rsync schedtool squashfs-tools zip  ## tools in next line are the only ones remaining                                                     
+# dnf install bc bison ccache curl flex git gnupg gperf lzop pngcrush rsync schedtool squashfs-tools zip  
+## tools in next line are the only ones remaining                                                     
 dnf install gperf pngcrush schedtool
 echo 'fedora build environment update successful' 
 ~                                                                                                                                                                                                                                             
 ~                                                                                                                                                                                                                                             
 ~                                                                                                                                                                                                                                             
-~                                                                                                                                                                                                                                             
-"build-env.sh" 53L, 8050C written                                                                                                                                                                                           53,1          All
+~                                                                                                                                                                                                                                                                                                                                                                                                                                   53,1          All
