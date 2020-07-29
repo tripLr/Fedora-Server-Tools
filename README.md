@@ -5,6 +5,10 @@
 # Fedora29
 # Fedora30
 # Fedora31
+# Fedora32
+
+# Also now including management tools with Fedora32
+
 # Fedora server build environment for Google AOSP and varients 
    including LineageOS AEX AICP AOKP 
 # many thanks to xda_developers @_mone, @ripee
