@@ -1,10 +1,12 @@
 # fedora-build 
-# Necessary packages to compile android using fedora instead of ubuntu
+# Packages to compile android using fedora
+# Security and management tools for ssh
 # Switch branches for your version of Fedora
 # Fedora28
 # Fedora29
 # Fedora30
 # Fedora31
+#fedora
 # Fedora server build environment for Google AOSP and varients 
    including LineageOS AEX AICP AOKP 
 # many thanks to xda_developers @_mone, @ripee
