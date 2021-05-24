@@ -11,7 +11,7 @@ sudo dnf install \ https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonf
 
 #Installed Environment Groups:
 
-sudo dnf -y groupinstall 'Fedora Server Edition' 'Cinnamon Desktop' 'Administration Tools' 'Authoring and Publishing' 'Books and Guides' 'C Development Tools and Libraries' 'Cloud Management Tools' 'Container Management' 'Development Tools' 'Editors' 'Games and Entertainment' 'Headless Management' 'MATE Applications' 'Network Servers' 'Office/Productivity' 'Python Classroom' 'Security Lab' 'System Tools' 'Text-based Internet' 'Development Libraries'
+sudo dnf -y groupinstall 'Fedora Server Edition' 'Cinnamon Desktop' 'Administration Tools' 'Authoring and Publishing' 'C Development Tools and Libraries' 'Cloud Management Tools' 'Container Management' 'Development Tools' 'Editors' 'Games and Entertainment' 'Headless Management' 'MATE Applications' 'Network Servers' 'Office/Productivity' 'Python Classroom' 'Security Lab' 'System Tools' 'Text-based Internet' 'Development Libraries'
 
 
 echo 'groupinstall complete'
