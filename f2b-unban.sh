@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# f2b-unban ver 0.1  
+# f2b-unban ver 0.19  
 # copyright github.com/triplr
 
 echo " fail2ban unban user and jail , jail optional "
