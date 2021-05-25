@@ -3,7 +3,12 @@
 # f2b-unban ver 0.19  
 # copyright github.com/triplr
 
+# print version
+
 echo " fail2ban unban user and jail , jail optional "
+
+# visual plans 
+# scroll output on 3 lines
 
 # usage
 # f2b-unban user jail
