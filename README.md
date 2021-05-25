@@ -3,9 +3,13 @@
 # Packages to compile android using fedora
 # Security and management tools for ssh
 # Switch branches for your version of Fedora
+
 # Tested Fedora28,29,30,31,32,33,34
 
 # Misc. server tools
+
+# Also now including management tools with Fedora32, 33, 34
+
 
 # Fedora server build environment for Google AOSP and varients 
    including LineageOS AEX AICP AOKP 
