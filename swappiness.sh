@@ -7,3 +7,4 @@ if [ $swap != 10 ] ;
 	else	echo "Swappiness was set to $swap "
 fi
 
+
