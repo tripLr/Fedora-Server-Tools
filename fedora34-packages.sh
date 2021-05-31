@@ -73,6 +73,13 @@ dnf -y install gperf pngcrush schedtool
 # misc tools
 dnf -y install rclone
 
+# install python 2.7
+dnf-y install python2.7
+
+# symlink 2.7
+ln -s /usr/bin/python2.7 /usr/bin/python
+
+
 echo 'fedora build environment update successful'
 
 
