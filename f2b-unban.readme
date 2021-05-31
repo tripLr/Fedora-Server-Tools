@@ -1,0 +1,6 @@
+f2b-unban readme
+
+      f2b-unban is for unbanning users 
+      from fail2ban-client by searching for username, extracting ip address 
+      from last login command and piping over unban ip address 
+      to fail2ban-client
