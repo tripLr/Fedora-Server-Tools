@@ -4,7 +4,7 @@
 # Security and management tools for ssh
 # Switch branches for your version of Fedora
 
-# Tested Fedora28,29,30,31,32,33,34
+# Tested Fedora28,29,30,31,32,33,34,35
 
 # Misc. server tools
 
@@ -12,7 +12,7 @@
 
 
 # Fedora server build environment for Google AOSP and varients 
-   including LineageOS AEX AICP AOKP 
+   
 # many thanks to xda_developers @_mone, @ripee
 
 Update First Successful Builds to Fedora Server with LineageOS on my server
