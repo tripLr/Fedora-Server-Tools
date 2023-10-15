@@ -1,4 +1,4 @@
-# fedora-tools Fedpra 39 NEW README
+# fedora-tools Fedora 38 and previous DEPRECIATED
 # This Repo contains a set of tools and guidelines
   This is how I generally set up my server Specific for Fedora
  Switch branches for your version of Fedora
