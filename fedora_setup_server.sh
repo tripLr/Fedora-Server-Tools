@@ -18,6 +18,10 @@ dnf install \ https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-r
 
 dnf -y groupinstall 'Fedora Server Edition' 'Administration Tools' 'Authoring and Publishing' 'C Development Tools and Libraries' 'Cloud Management Tools' 'Container Management' 'Development Tools' 'Editors' 'Headless Management' 'Network Servers' 'Python Classroom' 'Security Lab' 'System Tools' 'Text-based Internet' 'Development Libraries'
 
+# Install headless management and fail2ban security : see upcoming ssh and fail2ban install script
+# <NOTE> Fedora 39 has changed the way ssh is implemented 
+
+dnf -y install cockpit-* fail2ban
 # Install Desktop Environment
 # Fedora 39 requires Wayland
 
