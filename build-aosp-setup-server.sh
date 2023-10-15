@@ -5,18 +5,26 @@
 # remove the comments for the other groups you wish to install
 # note: This script translates fedora binaries from ubuntu
 
+alias dnf='sudo dnf'
+
 dnf clean metadata
 dnf update
-sudo dnf install \ https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install \ https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+dnf install \ https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+dnf install \ https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Install Fedora Environment Groups:
-# This installs most needed server environment, With a GUI desktop 
+# This installs most needed server environments
 
-sudo dnf -y groupinstall 'Fedora Server Edition' 'Cinnamon Desktop' 'Administration Tools' 'Authoring and Publishing' 'C Development Tools and Libraries' 'Cloud Management Tools' 'Container Management' 'Development Tools' 'Editors' 'Games and Entertainment' 'Headless Management' 'MATE Applications' 'Network Servers' 'Office/Productivity' 'Python Classroom' 'Security Lab' 'System Tools' 'Text-based Internet' 'Development Libraries'
+dnf -y groupinstall 'Fedora Server Edition' 'Administration Tools' 'Authoring and Publishing' 'C Development Tools and Libraries' 'Cloud Management Tools' 'Container Management' 'Development Tools' 'Editors' 'Headless Management' 'Network Servers' 'Python Classroom' 'Security Lab' 'System Tools' 'Text-based Internet' 'Development Libraries'
+
+# Install Desktop Environment
+# Fedora 39 requires Wayland
+
+dnf -y groupinstall 'KDE Plasma Workspaces'
 
 # Install headless management and fail2ban security : see upcoming ssh and fail2ban install script
-# <NOTE> Fedora 34 has changed the way ssh is implemented 
+# <NOTE> Fedora 39 has changed the way ssh is implemented 
 
 dnf -y install cockpit-* fail2ban
 
@@ -26,7 +34,7 @@ dnf -y install cockpit-* fail2ban
 dnf -y install java-1.8.0-openjdk-devel java-1.8.0-openjdk
 
 # fedora gcc-c++ replaces ubuntu  g++-multilib gcc-multilib
-# Fedora 34 installs with groupinstall 'C Development Tools and Libraries'
+# Fedora 39 installs with groupinstall 'C Development Tools and Libraries'
 #dnf -y install gcc-c++  
 
 # fedora readline.* installs listed below include both 32 bit (i686) and 64bit (x86-64) replaces ubuntu lib32readline-dev
@@ -43,7 +51,7 @@ dnf -y install   zlibrary-devel.*
 dnf -y install ncurses.*
 dnf -y install ncurses-*
 # fedora package ImageMagick replaces ubuntu imagemagic
-# Fedora 34 installs with groupinstall 'C Development Tools and Libraries'
+# Fedora 39 installs with groupinstall 'C Development Tools and Libraries'
 dnf -y install ImageMagick 
 # fedora packages SDL and SDL2 replace ubuntu libsdl1.2-dev
 dnf -y install SDL.* SDL-* SDL2.* SDL2-*
